@@ -15,12 +15,14 @@ All: O(n);
 // swap values
 
 function shuffleArray(array) {
-  for (let i = 0; i < array.length; i++) {
-    let rand = Math.floor(Math.random() * array.length);
-    let temp = array[i];
-    array[i] = array[rand];
-    array[rand] = temp;
-  }
+  if(array.length > 1) {
+    for (let i = 0; i < array.length; i++) {
+      let rand = Math.floor(Math.random() * array.length);
+      let temp = array[i];
+      array[i] = array[rand];
+      array[rand] = temp;
+    }
+  } 
 
   return array;
 }
