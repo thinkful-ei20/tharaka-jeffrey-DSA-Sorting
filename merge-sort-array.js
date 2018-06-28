@@ -1,14 +1,13 @@
 /* MERGE SORT - ALWAYS N LOG N
-  iterate array and compare adjacent values.
-  swap values if left greater than right.
-  call sort again if a swap has occurred, otherwise sort complete
+divide and conquer method
+if < 1 items, return array since it is considered sorted
+split array into halves
+recursively call mergeSort so array splits to 1 or 0 items
 
-  input   1, 3, 4, 2, 6, 5
-  output  1, 2, 3, 4, 5, 6
+input   1, 3, 4, 2, 6, 5
+output  1, 2, 3, 4, 5, 6
 
-  Best: O(n) - array is already in order
-  Worst: O(n^2) - every value has to be swapped
-  Avg: O(n^2)
+All: O(n log n)
 
 */
 

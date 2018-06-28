@@ -1,3 +1,14 @@
+/* QUICK SORT - sort in-place
+divide and conquer using pivot
+values less than pivot moved to front or array
+recursively sort partitioned data
+
+Best: O(n log n)
+Worst: O(n^2)
+Avg: O(n log n)
+
+*/
+
 'use strict';
 
 // swap function
