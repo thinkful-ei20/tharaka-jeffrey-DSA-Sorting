@@ -62,7 +62,7 @@ function bucketSort(array, bucketSize) {
 
   // Pushing values to buckets
   array.forEach(function (currentVal) {
-    allBuckets[Math.floor((currentVal - minValue) / bucketSize)].push(currentVal);
+    allBuckets[Math.floor((currentVal - minValue) / bucketSize)].push(currentVal);//Order is set because we substract the min from the current value. 
   });
 
   // Sorting buckets
